@@ -52,4 +52,25 @@ public class RestExceptionHandler {
                 new ErrorResponse().code(anfe.getCode()).message(anfe.getErrorMessage()), HttpStatus.NOT_FOUND
         );
     }
+
+    @ExceptionHandler(CategoryNotFoundException.class)
+    public ResponseEntity<ErrorResponse> addressNotFoundException(CategoryNotFoundException cnfe, WebRequest request) {
+        return new ResponseEntity<ErrorResponse>(
+                new ErrorResponse().code(cnfe.getCode()).message(cnfe.getErrorMessage()), HttpStatus.NOT_FOUND
+        );
+    }
+
+    @ExceptionHandler(RestaurantNotFoundException.class)
+    public ResponseEntity<ErrorResponse> restaurantNotFoundException(RestaurantNotFoundException rnfe, WebRequest request) {
+        return new ResponseEntity<ErrorResponse>(
+                new ErrorResponse().code(rnfe.getCode()).message(rnfe.getErrorMessage()), HttpStatus.NOT_FOUND
+        );
+    }
+
+    @ExceptionHandler(InvalidRatingException.class)
+    public ResponseEntity<ErrorResponse> invalidRatingException(InvalidRatingException ire, WebRequest request) {
+        return new ResponseEntity<ErrorResponse>(
+                new ErrorResponse().code(ire.getCode()).message(ire.getErrorMessage()), HttpStatus.BAD_REQUEST
+        );
+    }
 }
