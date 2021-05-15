@@ -35,6 +35,18 @@ public class AddressEntity {
     @ManyToOne
     private StateEntity state;
 
+    public AddressEntity() {
+    }
+
+    public AddressEntity(String uuid, String flatBuilNo, String locality, String city, String pincode, StateEntity state) {
+        this.uuid = uuid;
+        this.flatBuilNo = flatBuilNo;
+        this.locality = locality;
+        this.city = city;
+        this.pincode = pincode;
+        this.state = state;
+    }
+
     public Integer getId() {
         return id;
     }
