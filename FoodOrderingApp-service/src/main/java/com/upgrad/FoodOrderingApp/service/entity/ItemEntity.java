@@ -4,6 +4,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "item")
+@NamedQuery(name = "getItemById", query = "select i from ItemEntity i where i.uuid = :uuid")
 public class ItemEntity {
 
     @Id
