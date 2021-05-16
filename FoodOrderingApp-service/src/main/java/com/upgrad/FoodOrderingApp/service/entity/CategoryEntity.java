@@ -4,7 +4,11 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "category")
-@NamedQuery(name = "getCategoryByUUid", query = "select c from CategoryEntity c where c.uuid=:uuid")
+
+@NamedQueries({
+        @NamedQuery(name = "getCategoryByUUid", query = "select c from CategoryEntity c where c.uuid=:uuid"),
+        @NamedQuery(name = "getAllCategoriesSortedByName", query = "select c from CategoryEntity c order by c.categoryName")
+})
 public class CategoryEntity {
 
     @Id
