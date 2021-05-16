@@ -107,4 +107,11 @@ public class ItemService {
         }
         return temp;
     }
+
+    public List<ItemEntity> getItemsByCategory(CategoryEntity categoryEntity) {
+        List<CategoryItemEntity> categoryItems = categoryDao.getItemsForCategory(categoryEntity);
+        List<ItemEntity> categoryItemEntities = new ArrayList<>();
+        categoryItems.forEach(i -> categoryItemEntities.add(i.getItem()));
+        return categoryItemEntities;
+    }
 }

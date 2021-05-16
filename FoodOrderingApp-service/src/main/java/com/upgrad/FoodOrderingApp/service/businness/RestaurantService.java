@@ -1,5 +1,6 @@
 package com.upgrad.FoodOrderingApp.service.businness;
 
+import com.upgrad.FoodOrderingApp.service.dao.CategoryDao;
 import com.upgrad.FoodOrderingApp.service.dao.RestaurantDao;
 import com.upgrad.FoodOrderingApp.service.entity.CategoryEntity;
 import com.upgrad.FoodOrderingApp.service.entity.RestaurantCategoryEntity;
@@ -22,6 +23,9 @@ public class RestaurantService {
 
     @Autowired
     private RestaurantDao restaurantDao;
+
+    @Autowired
+    private CategoryDao categoryDao;
 
     public List<RestaurantEntity> restaurantsByRating() {
 
@@ -61,7 +65,7 @@ public class RestaurantService {
         if (StringUtils.isEmpty(caregoryUUid)) {
             throw new CategoryNotFoundException("CNF-001", "Category id field should not be empty");
         }
-        CategoryEntity category = restaurantDao.getCategoryByUUid(caregoryUUid);
+        CategoryEntity category = categoryDao.getCategoryByUUid(caregoryUUid);
         if (category == null) {
             throw new CategoryNotFoundException("CNF-002", "No category by this id");
         }

@@ -43,14 +43,6 @@ public class RestaurantDao {
         }
     }
 
-    public CategoryEntity getCategoryByUUid(String categoryUUid) {
-        try {
-            return entityManager.createNamedQuery("getCategoryByUUid", CategoryEntity.class).setParameter("uuid", categoryUUid).getSingleResult();
-        } catch (PersistenceException e) {
-            return null;
-        }
-    }
-
     public RestaurantEntity getRestaurantByUUid(String restaurantUuid) {
         try {
             return entityManager.createNamedQuery("getRestaurantByUuid", RestaurantEntity.class).setParameter("uuid", restaurantUuid).getSingleResult();
