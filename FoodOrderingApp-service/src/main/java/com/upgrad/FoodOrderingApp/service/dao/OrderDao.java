@@ -81,4 +81,12 @@ public class OrderDao {
         entityManager.persist(orderItem);
         return orderItem;
     }
+
+    public List<PaymentEntity> getAllPaymentMethods() {
+        try {
+            return entityManager.createNamedQuery("getAllPaymentMethods", PaymentEntity.class).getResultList();
+        } catch (PersistenceException pe) {
+            return null;
+        }
+    }
 }
