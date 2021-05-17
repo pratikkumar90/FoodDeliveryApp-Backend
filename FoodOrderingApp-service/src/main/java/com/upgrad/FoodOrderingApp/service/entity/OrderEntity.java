@@ -2,12 +2,14 @@ package com.upgrad.FoodOrderingApp.service.entity;
 
 import javax.persistence.*;
 import java.time.ZonedDateTime;
+import java.util.Date;
 
 @Entity
 @Table(name = "orders")
-@NamedQueries(
-        @NamedQuery(name = "getOrdersByRestaurant", query = "select o from OrderEntity o where o.restaurant=:restaurant")
-)
+@NamedQueries({
+        @NamedQuery(name = "getOrdersByRestaurant", query = "select o from OrderEntity o where o.restaurant=:restaurant"),
+        @NamedQuery(name = "getOrdersByCustomers", query = "select o from OrderEntity o where o.customer=:customer order by o.date desc")
+})
 public class OrderEntity {
 
     @Id
@@ -48,6 +50,23 @@ public class OrderEntity {
     @JoinColumn(name = "restaurant_id")
     @ManyToOne
     private RestaurantEntity restaurant;
+
+    public OrderEntity() {
+
+    }
+
+    public OrderEntity(String uuid, Double bill, CouponEntity coupon, Double discount
+            , Date date, PaymentEntity payment, CustomerEntity customer, AddressEntity address, RestaurantEntity restaurant) {
+        this.uuid = uuid;
+        this.bill = bill;
+        this.coupon = coupon;
+        this.discount = discount;
+        this.date = ZonedDateTime.now();
+        this.payment = payment;
+        this.customer = customer;
+        this.address = address;
+        this.restaurant = restaurant;
+    }
 
     public Integer getId() {
         return id;

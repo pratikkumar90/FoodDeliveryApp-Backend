@@ -4,6 +4,9 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "payment")
+@NamedQueries({
+        @NamedQuery(name = "getPaymentByUUID", query = "select p from PaymentEntity p where p.uuid = :uuid")
+})
 public class PaymentEntity {
 
     @Id
@@ -18,6 +21,15 @@ public class PaymentEntity {
 
     @Column(name = "payment_name")
     private String paymentName;
+
+    public PaymentEntity() {
+
+    }
+
+    public PaymentEntity(String uuid, String name) {
+        this.uuid = uuid;
+        this.paymentName = name;
+    }
 
     public Integer getId() {
         return id;

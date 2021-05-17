@@ -36,4 +36,13 @@ public class CustomerDao {
         return customerEntity;
     }
 
+    public CustomerEntity getCustomerByUUID(String customerId) {
+        try {
+            return entityManager.createNamedQuery("customerByUuid", CustomerEntity.class)
+                    .setParameter("uuid", customerId).getSingleResult();
+        } catch (PersistenceException pe) {
+            return null;
+        }
+    }
+
 }
