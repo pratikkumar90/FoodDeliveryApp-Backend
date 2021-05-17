@@ -4,6 +4,10 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "coupon")
+@NamedQueries({
+        @NamedQuery(name = "getCouponByCouponName", query = "select c from CouponEntity c where c.couponName = :couponName"),
+        @NamedQuery(name = "getCouponByCouponUUID", query = "select c from CouponEntity c where c.uuid = :uuid")
+})
 public class CouponEntity {
 
     @Id
@@ -21,6 +25,16 @@ public class CouponEntity {
 
     @Column(name = "percent")
     private Integer percent;
+
+    public CouponEntity() {
+
+    }
+
+    public CouponEntity(String uuid, String couponName, Integer percent) {
+        this.uuid = uuid;
+        this.couponName = couponName;
+        this.percent = percent;
+    }
 
     public Integer getId() {
         return id;

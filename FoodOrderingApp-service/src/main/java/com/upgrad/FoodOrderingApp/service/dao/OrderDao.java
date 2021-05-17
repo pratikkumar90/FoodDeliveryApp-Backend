@@ -1,9 +1,9 @@
 package com.upgrad.FoodOrderingApp.service.dao;
 
-import com.upgrad.FoodOrderingApp.service.entity.OrderEntity;
-import com.upgrad.FoodOrderingApp.service.entity.OrderItemEntity;
-import com.upgrad.FoodOrderingApp.service.entity.RestaurantEntity;
+import com.upgrad.FoodOrderingApp.service.entity.*;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -32,5 +32,53 @@ public class OrderDao {
         } catch (PersistenceException pe) {
             return null;
         }
+    }
+
+    public CouponEntity getCouponByCouponName(String couponName) {
+        try {
+            return entityManager.createNamedQuery("getCouponByCouponName", CouponEntity.class)
+                    .setParameter("couponName", couponName).getSingleResult();
+        } catch (PersistenceException pe) {
+            return null;
+        }
+    }
+
+    public CouponEntity getCouponByCouponUUID(String couponId) {
+        try {
+            return entityManager.createNamedQuery("getCouponByCouponUUID", CouponEntity.class)
+                    .setParameter("uuid", couponId).getSingleResult();
+        } catch (PersistenceException pe) {
+            return null;
+        }
+    }
+
+    public List<OrderEntity> ordersByCustomer(CustomerEntity customer) {
+        try {
+            return entityManager.createNamedQuery("getOrdersByCustomers", OrderEntity.class)
+                    .setParameter("customer", customer).getResultList();
+        } catch (PersistenceException pe) {
+            return null;
+        }
+    }
+
+    public PaymentEntity getPaymentByUUID(String paymentId) {
+        try {
+            return entityManager.createNamedQuery("getPaymentByUUID", PaymentEntity.class)
+                    .setParameter("uuid", paymentId).getSingleResult();
+        } catch (PersistenceException pe) {
+            return null;
+        }
+    }
+
+    @Transactional(propagation = Propagation.REQUIRED)
+    public OrderEntity saveOrder(OrderEntity order) {
+        entityManager.persist(order);
+        return order;
+    }
+
+    @Transactional(propagation = Propagation.REQUIRED)
+    public OrderItemEntity saveOrderItem(OrderItemEntity orderItem) {
+        entityManager.persist(orderItem);
+        return orderItem;
     }
 }

@@ -3,16 +3,46 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="2187793b-e64d-48fa-93dc-77d9c32a3738" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-api/src/test/java/com/upgrad/FoodOrderingApp/api/controller/CategoryControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodOrderingApp-api/src/test/java/com/upgrad/FoodOrderingApp/api/controller/CategoryControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/businness/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/businness/CategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-api/src/main/java/com/upgrad/FoodOrderingApp/api/exception/RestExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodOrderingApp-api/src/main/java/com/upgrad/FoodOrderingApp/api/exception/RestExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-api/src/test/java/com/upgrad/FoodOrderingApp/api/controller/OrderControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodOrderingApp-api/src/test/java/com/upgrad/FoodOrderingApp/api/controller/OrderControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/businness/ItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/businness/ItemService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/businness/RestaurantService.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/businness/RestaurantService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/dao/CategoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/dao/CategoryDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/dao/RestaurantDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/dao/RestaurantDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/entity/CategoryEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/entity/CategoryEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/dao/CustomerDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/dao/CustomerDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/dao/OrderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/dao/OrderDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/entity/CouponEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/entity/CouponEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/entity/OrderEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/entity/OrderEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/entity/PaymentEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/entity/PaymentEntity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +158,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CategoryControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OrderControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FoodOrderingApp-api" />
       <extension name="coverage">
         <pattern>
@@ -137,14 +167,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.upgrad.FoodOrderingApp.api.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.upgrad.FoodOrderingApp.api.controller.CategoryControllerTest" />
+      <option name="MAIN_CLASS_NAME" value="com.upgrad.FoodOrderingApp.api.controller.OrderControllerTest" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CategoryControllerTest.shouldGetCategoryById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OrderControllerTest.shouldNotGetCouponByNameIfCouponNameFieldIsEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FoodOrderingApp-api" />
       <extension name="coverage">
         <pattern>
@@ -153,15 +183,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.upgrad.FoodOrderingApp.api.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.upgrad.FoodOrderingApp.api.controller.CategoryControllerTest" />
-      <option name="METHOD_NAME" value="shouldGetCategoryById" />
+      <option name="MAIN_CLASS_NAME" value="com.upgrad.FoodOrderingApp.api.controller.OrderControllerTest" />
+      <option name="METHOD_NAME" value="shouldNotGetCouponByNameIfCouponNameFieldIsEmpty" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ItemControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OrderControllerTest.shouldNotSaveOrderIfAddressNotFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FoodOrderingApp-api" />
       <extension name="coverage">
         <pattern>
@@ -170,14 +200,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.upgrad.FoodOrderingApp.api.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.upgrad.FoodOrderingApp.api.controller.ItemControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="com.upgrad.FoodOrderingApp.api.controller.OrderControllerTest" />
+      <option name="METHOD_NAME" value="shouldNotSaveOrderIfAddressNotFound" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RestaurantControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OrderControllerTest.shouldNotSaveOrderIfPaymentMethodDoesNotExists" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FoodOrderingApp-api" />
       <extension name="coverage">
         <pattern>
@@ -186,14 +217,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.upgrad.FoodOrderingApp.api.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.upgrad.FoodOrderingApp.api.controller.RestaurantControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="com.upgrad.FoodOrderingApp.api.controller.OrderControllerTest" />
+      <option name="METHOD_NAME" value="shouldNotSaveOrderIfPaymentMethodDoesNotExists" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RestaurantControllerTest.shouldGetRestaurantDetailsForCorrectRestaurantId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OrderControllerTest.shouldSaveOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FoodOrderingApp-api" />
       <extension name="coverage">
         <pattern>
@@ -202,8 +234,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.upgrad.FoodOrderingApp.api.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.upgrad.FoodOrderingApp.api.controller.RestaurantControllerTest" />
-      <option name="METHOD_NAME" value="shouldGetRestaurantDetailsForCorrectRestaurantId" />
+      <option name="MAIN_CLASS_NAME" value="com.upgrad.FoodOrderingApp.api.controller.OrderControllerTest" />
+      <option name="METHOD_NAME" value="shouldSaveOrder" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -241,11 +273,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CategoryControllerTest" />
-        <item itemvalue="JUnit.CategoryControllerTest.shouldGetCategoryById" />
-        <item itemvalue="JUnit.ItemControllerTest" />
-        <item itemvalue="JUnit.RestaurantControllerTest" />
-        <item itemvalue="JUnit.RestaurantControllerTest.shouldGetRestaurantDetailsForCorrectRestaurantId" />
+        <item itemvalue="JUnit.OrderControllerTest" />
+        <item itemvalue="JUnit.OrderControllerTest.shouldNotSaveOrderIfPaymentMethodDoesNotExists" />
+        <item itemvalue="JUnit.OrderControllerTest.shouldNotSaveOrderIfAddressNotFound" />
+        <item itemvalue="JUnit.OrderControllerTest.shouldSaveOrder" />
+        <item itemvalue="JUnit.OrderControllerTest.shouldNotGetCouponByNameIfCouponNameFieldIsEmpty" />
       </list>
     </recent_temporary>
   </component>
@@ -280,6 +312,17 @@
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.sql" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="653" y="192" key="#com.intellij.ide.util.MemberChooser" timestamp="1621147977840">
       <screen x="0" y="25" width="1680" height="950" />
@@ -293,38 +336,38 @@
       <screen x="0" y="25" width="1680" height="950" />
     </state>
     <state width="491" height="466" key="DebuggerActiveHint/0.25.1680.950@0.25.1680.950" timestamp="1620562171464" />
-    <state width="1638" height="305" key="GridCell.Tab.0.bottom" timestamp="1621151102817">
+    <state width="1638" height="339" key="GridCell.Tab.0.bottom" timestamp="1621267267610">
       <screen x="0" y="25" width="1680" height="950" />
     </state>
-    <state width="1638" height="305" key="GridCell.Tab.0.bottom/0.25.1680.950@0.25.1680.950" timestamp="1621151102817" />
-    <state width="1638" height="305" key="GridCell.Tab.0.center" timestamp="1621151102816">
+    <state width="1638" height="339" key="GridCell.Tab.0.bottom/0.25.1680.950@0.25.1680.950" timestamp="1621267267610" />
+    <state width="1638" height="339" key="GridCell.Tab.0.center" timestamp="1621267267608">
       <screen x="0" y="25" width="1680" height="950" />
     </state>
-    <state width="1638" height="305" key="GridCell.Tab.0.center/0.25.1680.950@0.25.1680.950" timestamp="1621151102816" />
-    <state width="1638" height="305" key="GridCell.Tab.0.left" timestamp="1621151102814">
+    <state width="1638" height="339" key="GridCell.Tab.0.center/0.25.1680.950@0.25.1680.950" timestamp="1621267267608" />
+    <state width="1638" height="339" key="GridCell.Tab.0.left" timestamp="1621267267608">
       <screen x="0" y="25" width="1680" height="950" />
     </state>
-    <state width="1638" height="305" key="GridCell.Tab.0.left/0.25.1680.950@0.25.1680.950" timestamp="1621151102814" />
-    <state width="1638" height="305" key="GridCell.Tab.0.right" timestamp="1621151102817">
+    <state width="1638" height="339" key="GridCell.Tab.0.left/0.25.1680.950@0.25.1680.950" timestamp="1621267267608" />
+    <state width="1638" height="339" key="GridCell.Tab.0.right" timestamp="1621267267609">
       <screen x="0" y="25" width="1680" height="950" />
     </state>
-    <state width="1638" height="305" key="GridCell.Tab.0.right/0.25.1680.950@0.25.1680.950" timestamp="1621151102817" />
-    <state width="1638" height="305" key="GridCell.Tab.1.bottom" timestamp="1621151113354">
+    <state width="1638" height="339" key="GridCell.Tab.0.right/0.25.1680.950@0.25.1680.950" timestamp="1621267267609" />
+    <state width="1638" height="339" key="GridCell.Tab.1.bottom" timestamp="1621266812623">
       <screen x="0" y="25" width="1680" height="950" />
     </state>
-    <state width="1638" height="305" key="GridCell.Tab.1.bottom/0.25.1680.950@0.25.1680.950" timestamp="1621151113354" />
-    <state width="1638" height="305" key="GridCell.Tab.1.center" timestamp="1621151113353">
+    <state width="1638" height="339" key="GridCell.Tab.1.bottom/0.25.1680.950@0.25.1680.950" timestamp="1621266812623" />
+    <state width="1638" height="339" key="GridCell.Tab.1.center" timestamp="1621266812622">
       <screen x="0" y="25" width="1680" height="950" />
     </state>
-    <state width="1638" height="305" key="GridCell.Tab.1.center/0.25.1680.950@0.25.1680.950" timestamp="1621151113353" />
-    <state width="1638" height="305" key="GridCell.Tab.1.left" timestamp="1621151113353">
+    <state width="1638" height="339" key="GridCell.Tab.1.center/0.25.1680.950@0.25.1680.950" timestamp="1621266812622" />
+    <state width="1638" height="339" key="GridCell.Tab.1.left" timestamp="1621266812622">
       <screen x="0" y="25" width="1680" height="950" />
     </state>
-    <state width="1638" height="305" key="GridCell.Tab.1.left/0.25.1680.950@0.25.1680.950" timestamp="1621151113353" />
-    <state width="1638" height="305" key="GridCell.Tab.1.right" timestamp="1621151113354">
+    <state width="1638" height="339" key="GridCell.Tab.1.left/0.25.1680.950@0.25.1680.950" timestamp="1621266812622" />
+    <state width="1638" height="339" key="GridCell.Tab.1.right" timestamp="1621266812622">
       <screen x="0" y="25" width="1680" height="950" />
     </state>
-    <state width="1638" height="305" key="GridCell.Tab.1.right/0.25.1680.950@0.25.1680.950" timestamp="1621151113354" />
+    <state width="1638" height="339" key="GridCell.Tab.1.right/0.25.1680.950@0.25.1680.950" timestamp="1621266812622" />
     <state width="1638" height="305" key="GridCell.Tab.2.bottom" timestamp="1621151102563">
       <screen x="0" y="25" width="1680" height="950" />
     </state>
